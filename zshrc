@@ -6,6 +6,7 @@ DISABLE_LS_COLORS="true"
 plugins=(git bundler brew gem rbates)
 
 export PATH="/usr/local/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -24,7 +25,6 @@ alias gd='git diff'
 alias go='git checkout '
 alias gk='gitk --all&'
 alias gx='gitx --all'
-alias rake='noglob rake'
 
 export LC_CTYPE=en_US.UTF-8
 export LANG=en_US.UTF-8
