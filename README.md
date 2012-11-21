@@ -4,6 +4,12 @@ I removed the vim related configs because I don't use it... yet :)
 
 Below is the original rbates text.
 
+## Prerequisites
+
+* ZSH (any recent version)
+* Ruby 
+* Rake
+* tmux
 
 
 ## Installation
