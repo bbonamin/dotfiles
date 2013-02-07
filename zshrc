@@ -13,8 +13,6 @@ source $ZSH/oh-my-zsh.sh
 # for Homebrew installed rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
-
 export CC=gcc-4.2
 alias gitlog='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
 alias gs='git status '
