@@ -6,6 +6,7 @@ DISABLE_LS_COLORS="true"
 plugins=(git bundler brew gem rbates)
 
 export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/share/npm/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
