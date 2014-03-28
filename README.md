@@ -1,7 +1,5 @@
 # bbonamin's fork of Ryan Bates Dot Files
 
-I removed the vim related configs because I don't use it... yet :)
-
 Below is the original rbates text.
 
 ## Prerequisites
