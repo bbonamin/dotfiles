@@ -1,7 +1,8 @@
 call pathogen#infect()
 syntax on
 set number
-colorscheme desert
+set t_Co=256
+colorscheme desert256
 set tabstop=2
 set sw=2
 set expandtab
