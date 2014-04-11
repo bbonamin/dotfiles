@@ -1,4 +1,4 @@
-# bbonamin's fork of Ryan Bates Dot Files
+# My dotfiles ( a fork of rbates dotfiles)
 
 Below is the original rbates text.
 
@@ -8,14 +8,13 @@ Below is the original rbates text.
 * Ruby 
 * Rake
 * tmux
+* the_silver_searcher
 
 
 ## Installation
 
-Run the following commands in your terminal. It will prompt you before it does anything destructive. Check out the [Rakefile](https://github.com/ryanb/dotfiles/blob/custom-bash-zsh/Rakefile) to see exactly what it does.
-
 ```terminal
-git clone git://github.com/ryanb/dotfiles ~/.dotfiles
+git clone git://github.com/bbonamin/dotfiles ~/.dotfiles
 cd ~/.dotfiles
 rake install
 ```
