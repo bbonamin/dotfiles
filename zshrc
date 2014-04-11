@@ -29,3 +29,9 @@ export LANG=en_US.UTF-8
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+### Improve Ruby VM performance
+export RUBY_GC_MALLOC_LIMIT=1000000000
+export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1.25
+export RUBY_HEAP_MIN_SLOTS=800000
+export RUBY_FREE_MIN=600000
