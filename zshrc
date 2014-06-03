@@ -2,7 +2,6 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="miloshadzic"
 DISABLE_AUTO_UPDATE="true"
 DISABLE_LS_COLORS="true"
-
 plugins=(git bundler brew gem rbates)
 
 export PATH="/usr/local/bin:$PATH"
@@ -33,5 +32,5 @@ export PATH="/usr/local/heroku/bin:$PATH"
 ### Improve Ruby VM performance
 export RUBY_GC_MALLOC_LIMIT=1000000000
 export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1.25
-export RUBY_HEAP_MIN_SLOTS=800000
-export RUBY_FREE_MIN=600000
+export RUBY_GC_HEAP_INIT_SLOTS=800000
+export RUBY_GC_HEAP_FREE_SLOTS=600000
