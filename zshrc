@@ -7,6 +7,7 @@ plugins=(git bundler brew gem rbates)
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
+export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 
 source $ZSH/oh-my-zsh.sh
 
