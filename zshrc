@@ -6,13 +6,12 @@ plugins=(git bundler brew gem rbates)
 
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
-export PATH="$HOME/.rbenv/bin:$PATH"
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 
 source $ZSH/oh-my-zsh.sh
 
-# for Homebrew installed rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh #auto-switch according to .ruby-version
 
 alias gitlog='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
 alias gs='git status '
@@ -29,9 +28,3 @@ export LANG=en_US.UTF-8
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-
-### Improve Ruby VM performance
-export RUBY_GC_MALLOC_LIMIT=1000000000
-export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1.25
-export RUBY_GC_HEAP_INIT_SLOTS=800000
-export RUBY_GC_HEAP_FREE_SLOTS=600000
