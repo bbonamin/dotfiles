@@ -1,5 +1,5 @@
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="miloshadzic"
+ZSH_THEME="awesomepanda"
 DISABLE_AUTO_UPDATE="true"
 DISABLE_LS_COLORS="true"
 plugins=(git bundler brew gem rbates)
@@ -7,7 +7,8 @@ plugins=(git bundler brew gem rbates)
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
-
+export PATH="./node_modules/.bin:$PATH" #Add node_modules to path
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 source $ZSH/oh-my-zsh.sh
 
 source /usr/local/share/chruby/chruby.sh
