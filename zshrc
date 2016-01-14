@@ -6,13 +6,14 @@ plugins=(git bundler brew gem rbates)
 
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 export PATH="./node_modules/.bin:$PATH" #Add node_modules to path
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 source $ZSH/oh-my-zsh.sh
 
-source /usr/local/share/chruby/chruby.sh
-source /usr/local/share/chruby/auto.sh #auto-switch according to .ruby-version
+# for Homebrew installed rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 alias gitlog='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
 alias gs='git status '
