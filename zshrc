@@ -24,7 +24,7 @@ alias gd='git diff'
 alias go='git checkout '
 alias gk='gitk --all&'
 alias gx='gitx --all'
-
+alias local_network_devices='arp -a'
 export LC_CTYPE=en_US.UTF-8
 export LANG=en_US.UTF-8
 
