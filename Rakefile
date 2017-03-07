@@ -45,6 +45,9 @@ def link_file(file)
     File.open(File.join(ENV['HOME'], ".#{file.sub(/\.erb$/, '')}"), 'w') do |new_file|
       new_file.write ERB.new(File.read(file)).result(binding)
     end
+  elsif file =~ /zprofile$/ # copy zprofile instead of link
+    puts "copying ~/.#{file}"
+    system %Q{cp "$PWD/#{file}" "$HOME/.#{file}"}
   elsif file =~ /zshrc$/ # copy zshrc instead of link
     puts "copying ~/.#{file}"
     system %Q{cp "$PWD/#{file}" "$HOME/.#{file}"}
@@ -83,7 +86,7 @@ def install_oh_my_zsh
     when 'q'
       exit
     else
-      puts "skipping oh-my-zsh, you will need to change ~/.zshrc"
+      puts "skipping oh-my-zsh, you will need to change ~/.zprofile"
     end
   end
 end

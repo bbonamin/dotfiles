@@ -3,7 +3,7 @@
 ## Prerequisites
 
 * ZSH (any recent version)
-* Ruby 
+* Ruby
 * Rake
 * tmux
 * the_silver_searcher
@@ -19,7 +19,7 @@ rake install
 
 After installing, open a new terminal window to see the effects.
 
-Feel free to customize the .zshrc file to match your preference.
+Feel free to customize the .zprofile file to match your preference.
 
 
 ## Uninstall
@@ -34,7 +34,8 @@ unlink ~/.gvimrc
 unlink ~/.irbrc
 unlink ~/.vim
 unlink ~/.vimrc
-rm ~/.zshrc # careful here
+rm ~/.zprofile
+rm ~/.zshrc
 rm ~/.gitconfig
 rm -rf ~/.dotfiles
 rm -rf ~/.oh-my-zsh
